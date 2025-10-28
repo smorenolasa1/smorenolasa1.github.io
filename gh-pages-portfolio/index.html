@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sofía Moreno — Portfolio</title>
+  <meta name="description" content="Projects, blog posts, and contact for Sofía Moreno.">
+  <meta property="og:title" content="Sofía Moreno — Portfolio">
+  <meta property="og:description" content="Projects, blog posts, and contact for Sofía Moreno.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.png">
+  <!-- Tailwind via CDN (no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // basic dark mode support (remembers choice)
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <style>
+    /* small enhancements */
+    .link { text-decoration: underline; text-underline-offset: 3px; }
+  </style>
+</head>
+<body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <header class="max-w-5xl mx-auto px-4 py-6 flex items-center justify-between">
+    <a href="./" class="font-semibold text-lg">Sofía Moreno</a>
+    <nav class="space-x-4">
+      <a class="link" href="./projects.html">Projects</a>
+      <a class="link" href="./resume.pdf">CV</a>
+      <a class="link" href="mailto:you@example.com">Contact</a>
+      <button id="themeBtn" class="rounded-xl border px-3 py-1 text-sm dark:border-slate-700">Toggle theme</button>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 pb-16">
+    <section class="rounded-3xl p-8 md:p-12 bg-slate-100 dark:bg-slate-900 shadow">
+      <h1 class="text-3xl md:text-4xl font-bold mb-3">Hi, I'm Sofía 👋</h1>
+      <p class="text-lg leading-relaxed max-w-3xl">
+        AI engineer & researcher. I build practical AI tools, data products, and clean UX for complex systems.
+        This site hosts a selection of my work, from <span class="font-medium">LLM tooling</span> to
+        <span class="font-medium">data visualization</span> and <span class="font-medium">robotics</span>.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a class="rounded-xl bg-black text-white px-4 py-2 dark:bg-white dark:text-black" href="./projects.html">See projects</a>
+        <a class="rounded-xl border px-4 py-2 dark:border-slate-700" href="https://github.com/">GitHub</a>
+        <a class="rounded-xl border px-4 py-2 dark:border-slate-700" href="https://www.linkedin.com/">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold mb-4">Featured projects</h2>
+      <div id="featured" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      <div class="mt-6">
+        <a class="link" href="./projects.html">Browse all projects →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="max-w-5xl mx-auto px-4 py-10 text-sm text-slate-500">
+    © <span id="year"></span> Sofía Moreno — Built with GitHub Pages
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

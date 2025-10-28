@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Sofía Moreno</title>
+  <meta name="description" content="Projects by Sofía Moreno.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+</head>
+<body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <header class="max-w-5xl mx-auto px-4 py-6 flex items-center justify-between">
+    <a href="./" class="font-semibold text-lg">Sofía Moreno</a>
+    <nav class="space-x-4">
+      <a class="link" href="./projects.html">Projects</a>
+      <a class="link" href="./resume.pdf">CV</a>
+      <a class="link" href="mailto:you@example.com">Contact</a>
+      <button id="themeBtn" class="rounded-xl border px-3 py-1 text-sm dark:border-slate-700">Toggle theme</button>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 pb-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-6">Projects</h1>
+
+    <div class="flex flex-wrap gap-3 mb-6" id="tagBar"></div>
+
+    <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </main>
+
+  <footer class="max-w-6xl mx-auto px-4 py-10 text-sm text-slate-500">
+    © <span id="year"></span> Sofía Moreno — Built with GitHub Pages
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

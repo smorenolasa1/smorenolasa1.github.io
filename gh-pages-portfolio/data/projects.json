@@ -1,0 +1,44 @@
+[
+  {
+    "title": "TJ-II Fusion Data Chatbot",
+    "year": 2025,
+    "tags": [
+      "FastAPI",
+      "LLM",
+      "DataViz"
+    ],
+    "summary": "GenAI chatbot for nuclear fusion signals with similar-pattern retrieval & plotting.",
+    "repo": "https://github.com/your-user/tj2-chatbot",
+    "demo": "",
+    "image": "",
+    "featured": true
+  },
+  {
+    "title": "RFP Assistant (watsonx Orchestrate)",
+    "year": 2025,
+    "tags": [
+      "Orchestrate",
+      "Agents",
+      "Automation"
+    ],
+    "summary": "Agentic workflow to draft and refine RFP responses from knowledge bases.",
+    "repo": "https://github.com/your-user/rfp-assistant",
+    "demo": "",
+    "image": "",
+    "featured": true
+  },
+  {
+    "title": "Robotics: YOLO Picking",
+    "year": 2024,
+    "tags": [
+      "Robotics",
+      "YOLO",
+      "Planning"
+    ],
+    "summary": "Object detection + grasp + path-planning demo with performance metrics.",
+    "repo": "https://github.com/your-user/robotics-yolo",
+    "demo": "",
+    "image": "",
+    "featured": false
+  }
+]
