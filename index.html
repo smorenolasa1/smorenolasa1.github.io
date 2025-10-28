@@ -23,19 +23,20 @@
     .link { text-decoration: underline; text-underline-offset: 3px; }
   </style>
 </head>
-<body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+<body class="relative overflow-x-hidden bg-gradient-to-br from-white via-sky-50 to-blue-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100">
+  <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.15),transparent_70%)]"></div>
   <header class="max-w-5xl mx-auto px-4 py-6 flex items-center justify-between">
     <a href="./" class="font-semibold text-lg">Sofía Moreno</a>
     <nav class="space-x-4">
-      <a class="link" href="./projects.html">Projects</a>
-      <a class="link" href="./resume.pdf">CV</a>
-      <a class="link" href="mailto:you@example.com">Contact</a>
+      <a class="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full" href="./projects.html">Projects</a>
+      <a class="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full" href="./resume.pdf">CV</a>
+      <a class="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full" href="mailto:you@example.com">Contact</a>
       <button id="themeBtn" class="rounded-xl border px-3 py-1 text-sm dark:border-slate-700">Toggle theme</button>
     </nav>
   </header>
 
   <main class="max-w-5xl mx-auto px-4 pb-16">
-    <section class="rounded-3xl p-8 md:p-12 bg-slate-100 dark:bg-slate-900 shadow">
+    <section class="rounded-3xl p-8 md:p-12 bg-slate-100 dark:bg-slate-900 shadow fade">
       <h1 class="text-3xl md:text-4xl font-bold mb-3">Hi, I'm Sofía 👋</h1>
       <p class="text-lg leading-relaxed max-w-3xl">
         AI engineer & researcher. I build practical AI tools, data products, and clean UX for complex systems.
@@ -63,5 +64,24 @@
   </footer>
 
   <script src="assets/site.js"></script>
+
+  <script>
+  // Fade-in effect when scrolling
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade').forEach(el => {
+    el.classList.add('opacity-0', 'translate-y-4', 'transition', 'duration-700');
+    observer.observe(el);
+  });
+</script>
+</div>
+<script src="assets/site.js"></script>
+</body>
 </body>
 </html>

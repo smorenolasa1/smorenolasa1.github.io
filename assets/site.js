@@ -54,7 +54,7 @@ function card(p) {
   a.href = p.demo || p.repo || '#';
   a.target = '_blank';
   a.rel = 'noopener noreferrer';
-  a.className = 'block rounded-3xl overflow-hidden border hover:shadow-lg transition dark:border-slate-800';
+  a.className = 'block rounded-3xl overflow-hidden border dark:border-slate-800 transform transition duration-500 hover:scale-[1.03] hover:shadow-2xl hover:-translate-y-1';
   a.innerHTML = `
     <div class="aspect-video bg-slate-100 dark:bg-slate-900 flex items-center justify-center">
       ${p.image ? `<img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover">` : '<span class="text-sm text-slate-500">No image</span>'}
