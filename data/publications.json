@@ -1,0 +1,43 @@
+{
+  "thesis": [
+    {
+      "title": "AI-Driven Multi-Modal Data Analysis for Nuclear Fusion",
+      "year": 2025,
+      "authors": ["Sofía Moreno"],
+      "venue": "Final Degree Thesis, IE University (IBM & CIEMAT)",
+      "summary": "GenAI system for fusion experiments: CSV retrieval, natural language querying, and signal visualization with similar-pattern search.",
+      "pdf": "https://your-site-or-drive-link/thesis.pdf",
+      "code": "https://github.com/your-username/tj2-chatbot",
+      "image": "assets/img/thesis.png",
+      "artifacts": [
+        {"label": "PDF", "url": "https://your-site-or-drive-link/thesis.pdf"},
+        {"label": "Slides", "url": "https://your-site-or-drive-link/slides.pdf"},
+        {"label": "Code", "url": "https://github.com/your-username/tj2-chatbot"}
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "Kernel Ridge Regression Estimation of High-Frequency Signals for Nuclear Fusion Diagnostics",
+      "year": 2024,
+      "authors": ["A. Pereira", "Sofía Moreno", "et al."],
+      "venue": "Fusion Engineering and Design",
+      "summary": "KRR-based estimation pipeline for reconstructing diagnostics data with high temporal resolution.",
+      "doi": "https://doi.org/xx.xxxx/fusengdes.xxxxxx",
+      "pdf": "https://arxiv.org/abs/xxxx.xxxxx",
+      "code": "",
+      "image": "assets/img/krr.png"
+    },
+    {
+      "title": "Generative AI for Similar-Pattern Retrieval in Fusion Signals",
+      "year": 2025,
+      "authors": ["Sofía Moreno", "A. Pereira", "et al."],
+      "venue": "SOFE 2025 (to appear)",
+      "summary": "Agentic approach integrating signal processing with conversational retrieval and plotting.",
+      "doi": "",
+      "pdf": "",
+      "code": "https://github.com/your-username/simil-pattern-prototype",
+      "image": "assets/img/sofe.png"
+    }
+  ]
+}
